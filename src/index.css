@@ -1,0 +1,33 @@
+:root { 
+  --primary: #00ff9d; 
+  --accent: #ff6600; 
+  --bg: #050505; 
+  --panel: #0a0a0a; 
+}
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  background: var(--bg);
+  color: #eee;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes slideIn { 
+  from { opacity: 0; transform: translateX(-10px); } 
+  to { opacity: 1; transform: translateX(0); } 
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-thumb { background: var(--primary); }

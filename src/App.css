@@ -1,0 +1,147 @@
+#sidebar {
+  width: 280px;
+  background: #000;
+  padding: 25px;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100vh;
+}
+
+.brand-box { 
+  border-bottom: 2px solid var(--primary); 
+  padding-bottom: 15px; 
+  margin-bottom: 20px; 
+}
+
+.brand-box h2 { 
+  font-size: 1.2rem; 
+  color: var(--primary); 
+  margin: 0; 
+}
+
+.nav-btn { 
+  width: 100%; 
+  padding: 12px; 
+  background: var(--panel); 
+  color: var(--primary); 
+  border: 1px solid #333; 
+  cursor: pointer; 
+  text-align: left; 
+  border-radius: 4px; 
+  font-size: 0.75rem; 
+  transition: 0.2s; 
+}
+
+.nav-btn:hover { 
+  background: var(--primary); 
+  color: #000; 
+}
+
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+#top-info { 
+  background: #000; 
+  padding: 10px 25px; 
+  font-size: 0.7rem; 
+  color: #555; 
+  display: flex; 
+  justify-content: space-between; 
+  border-bottom: 1px solid #111;
+}
+
+#chat-container { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 20px 40px; 
+  overflow: hidden; 
+}
+
+#chat-window { 
+  flex: 1; 
+  overflow-y: auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+  padding-right: 10px; 
+  scroll-behavior: smooth; 
+}
+
+.msg { 
+  max-width: 85%; 
+  padding: 15px 20px; 
+  border-radius: 4px; 
+  line-height: 1.6; 
+  animation: slideIn 0.3s ease-out; 
+  position: relative;
+}
+
+.msg.user { 
+  align-self: flex-end; 
+  background: var(--accent); 
+  color: #000; 
+  border-right: 4px solid #fff; 
+}
+
+.msg.ai { 
+  align-self: flex-start; 
+  background: var(--panel); 
+  border: 1px solid #222; 
+  border-left: 4px solid var(--primary); 
+}
+
+.protocol-tag { 
+  font-size: 0.65rem; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  color: var(--primary); 
+  margin-bottom: 8px; 
+  display: block; 
+  letter-spacing: 1.5px;
+}
+
+.logic-step { 
+  color: #888; 
+  font-size: 0.75rem; 
+  font-style: italic; 
+  border-left: 1px solid #444; 
+  padding-left: 10px; 
+  margin: 8px 0; 
+}
+
+#input-area { 
+  padding: 30px 40px; 
+  background: #000; 
+  border-top: 1px solid #222; 
+  display: flex; 
+  gap: 15px; 
+}
+
+input { 
+  flex: 1; 
+  background: #080808; 
+  border: 1px solid #222; 
+  color: var(--primary); 
+  padding: 18px; 
+  border-radius: 4px; 
+  outline: none; 
+  font-family: inherit; 
+}
+
+#send-btn { 
+  background: var(--primary); 
+  color: #000; 
+  border: none; 
+  padding: 0 30px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  text-transform: uppercase; 
+}
